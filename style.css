@@ -24,12 +24,10 @@ body {
 header {
   background-color: #313234;
   height: 60px; }
-
-.logo {
-  float: left; }
-
-.links {
-  padding: 2px 2px; }
+  header .links {
+    padding: 2px 2px; }
+    header .links .logo {
+      float: left; }
 
 header .container nav img {
   padding: 10px; }
@@ -56,27 +54,24 @@ header .container nav a {
   background: url(https://images.pexels.com/photos/196661/pexels-photo-196661.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
   background-repeat: no-repeat;
   background-size: cover; }
-
-.slogan {
-  width: 50%;
-  height: 200px;
-  max-height: 200px;
-  right: 0;
-  float: right;
-  position: absolute;
-  margin: 150px 0;
-  background: rgba(47, 53, 66, 0.4); }
-
-.slogan_text1, .slogan_text2 {
-  text-transform: uppercase;
-  color: white;
-  font-size: 30px;
-  font-weight: 300;
-  padding: 0px 100px 0px 5px; }
-
-.slogan_text2 {
-  font-weight: bold;
-  padding: 5px 100px 5px 5px; }
+  .hero .slogan {
+    width: 50%;
+    height: 200px;
+    max-height: 200px;
+    right: 0;
+    float: right;
+    position: absolute;
+    margin: 150px 0;
+    background: rgba(47, 53, 66, 0.4); }
+    .hero .slogan .slogan_text1, .hero .slogan .slogan_text2 {
+      text-transform: uppercase;
+      color: white;
+      font-size: 30px;
+      font-weight: 300;
+      padding: 0px 100px 0px 5px; }
+    .hero .slogan .slogan_text2 {
+      font-weight: bold;
+      padding: 5px 100px 5px 5px; }
 
 [class*="col-"] {
   float: left;
@@ -159,23 +154,27 @@ header .container nav a {
 .options_1 {
   text-align: center;
   padding: 70px 5px; }
+  .options_1 .text {
+    text-transform: uppercase; }
+  .options_1 .icon {
+    font-size: 50px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    border-radius: 20px;
+    width: 100px;
+    margin: 20px auto;
+    border: 5px solid #313332;
+    padding: 15px 15px;
+    background: #313332; }
+    .options_1 .icon:hover {
+      background: #00c7e8;
+      border-color: #00c7e8; }
+    .options_1 .icon:hover + .text h2 {
+      color: #00c7e8; }
 
 .text {
   text-transform: uppercase; }
-
-.icon {
-  font-size: 50px;
-  border-radius: 20px;
-  width: 100px;
-  margin: 20px auto;
-  border: 5px solid #313332;
-  padding: 15px 15px;
-  background: #313332; }
-  .icon:hover {
-    background: #00c7e8;
-    border-color: #00c7e8; }
-  .icon:hover + .text h2 {
-    color: #00c7e8; }
 
 .fa {
   color: white; }
@@ -195,13 +194,12 @@ header .container nav a {
 
 .gallery1 {
   margin: 10px 0; }
-
-.gallery1_item {
-  height: 380px;
-  position: relative; }
-  .gallery1_item img {
-    width: 100%;
-    height: 100%; }
+  .gallery1 .gallery1_item {
+    height: 380px;
+    position: relative; }
+    .gallery1 .gallery1_item img {
+      width: 100%;
+      height: 100%; }
 
 .layer {
   position: absolute;
@@ -221,6 +219,9 @@ header .container nav a {
     .layer a:hover {
       background: rgba(255, 255, 255, 0.5);
       transform: scale(1.2);
+      -webkit-border-radius: 10px;
+      -moz-border-radius: 10px;
+      -ms-border-radius: 10px;
       border-radius: 10px; }
 
 .gallery1_item:hover .layer {
@@ -231,37 +232,38 @@ header .container nav a {
   margin: 100px auto;
   padding: 50px 5px 50px 5px;
   text-align: center; }
-
-.crew_photo {
-  display: block;
-  position: relative; }
-
-.img1 {
-  padding: 10px 20px;
-  width: 300px;
-  height: 300px;
-  border-radius: 100%;
-  transition: 0.4s;
-  text-align: center; }
-
-.descr_img1 {
-  position: absolute;
-  width: 100%;
-  line-height: 50px;
-  top: 100px;
-  text-transform: uppercase;
-  display: none;
-  color: whitesmoke;
-  font-weight: bold;
-  border-radius: 100%; }
-
-.descr_img2 {
-  font-size: 20px;
-  font-weight: 800; }
-
-.crew_image:hover {
-  cursor: pointer;
-  transition: 0.4s; }
+  .crew .crew_photo {
+    display: block;
+    position: relative; }
+    .crew .crew_photo .img1 {
+      padding: 10px 20px;
+      width: 300px;
+      height: 300px;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      border-radius: 100%;
+      transition: 0.4s;
+      text-align: center; }
+    .crew .crew_photo .descr_img1 {
+      position: absolute;
+      width: 100%;
+      line-height: 50px;
+      top: 100px;
+      text-transform: uppercase;
+      display: none;
+      color: whitesmoke;
+      font-weight: bold;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      -ms-border-radius: 100%;
+      border-radius: 100%; }
+    .crew .crew_photo .descr_img2 {
+      font-size: 20px;
+      font-weight: 800; }
+    .crew .crew_photo .crew_image:hover {
+      cursor: pointer;
+      transition: 0.4s; }
 
 .crew_photo:hover .descr_img1 {
   display: block; }
@@ -279,21 +281,21 @@ header .container nav a {
 .coffee {
   width: 100%;
   height: 350px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
   border-radius: 5px; }
 
 .awesome {
   background: darkgray; }
 
-.awesome_h2 {
-  line-height: 30px; }
-
-.awesome_descr h2 {
+.awesome_descr .awesome_h2 {
+  line-height: 30px;
   text-transform: uppercase;
   font-size: 40px;
   color: white;
   font-weight: bold; }
-
-.awesome_p {
+.awesome_descr .awesome_p {
   color: white;
   float: left; }
 
@@ -301,47 +303,39 @@ header .container nav a {
   text-align: center;
   line-height: 5px;
   padding: 50px 0; }
-
-.num {
-  font-family: "Nanum Pen Script", cursive;
-  font-size: 80px; }
-
-.descr_num {
-  font-size: 20px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #00c7e8; }
+  .numbers .num {
+    font-family: "Nanum Pen Script", cursive;
+    font-size: 80px; }
+  .numbers .descr_num {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #00c7e8; }
 
 footer {
   padding: 10px 25px; }
-
-.foot {
-  padding: 5px auto;
-  float: left;
-  background: #353736;
-  color: white; }
-
-.about, .get, .doc {
-  text-align: left; }
-
-.about1 h2 {
-  font-size: 30px;
-  text-transform: uppercase; }
-
-.getin h2 {
-  font-size: 30px;
-  text-transform: uppercase; }
-
-.leftdescription {
-  text-transform: uppercase;
-  font-size: 15px;
-  float: left; }
+  footer .foot {
+    padding: 5px auto;
+    float: left;
+    background: #353736;
+    color: white; }
+    footer .foot .about {
+      text-align: left; }
+      footer .foot .about .about1 h2 {
+        font-size: 30px;
+        text-transform: uppercase; }
+    footer .foot .get .getin h2 {
+      font-size: 30px;
+      text-transform: uppercase; }
+    footer .foot .get .leftdescription {
+      text-transform: uppercase;
+      font-size: 15px;
+      float: left; }
 
 .social h2 {
   font-size: 30px;
   text-transform: uppercase; }
-
-.icon-btn {
+.social .icon-btn {
   width: 40px;
   height: 40px;
   border-style: none;
@@ -349,7 +343,7 @@ footer {
   margin: 10px;
   cursor: pointer;
   font-size: 20px; }
-  .icon-btn:hover {
+  .social .icon-btn:hover {
     transform: scale(1.1); }
 
 .twitter {
@@ -393,31 +387,28 @@ footer {
     padding: 12px;
     float: left; }
 
-  .logo {
-    float: none; }
-
   header {
     height: 370px;
     text-align: center; }
+    header .container .logo {
+      float: none; }
+    header .container nav img {
+      padding: 10px;
+      float: none; }
+    header .container nav ul {
+      float: none;
+      padding: 0; }
+      header .container nav ul li {
+        display: block; }
 
-  header .container nav img {
-    padding: 10px; }
-  header .container nav ul {
-    float: none;
-    padding: 0; }
-    header .container nav ul li {
-      display: block; }
-
-  .slogan {
-    height: 100px; }
-
-  .slogan_text1, .slogan_text2 {
-    font-size: 15px;
-    padding: 5px 50px 0px 5px; }
-
-  .slogan_text2 {
-    font-size: 15px;
-    padding: 0px 50px 5px 5px; }
+  .hero .slogan {
+    height: 130px; }
+    .hero .slogan .slogan_text1, .hero .slogan .slogan_text2 {
+      font-size: 15px;
+      padding: 5px 50px 0px 5px; }
+    .hero .slogan .slogan_text2 {
+      font-size: 15px;
+      padding: 0px 50px 5px 5px; }
 
   .col-s-1 {
     width: 8.33%; }
@@ -465,7 +456,7 @@ footer {
   .descr_img1 {
     display: block; }
 
-  .about, .get, .soc {
+  .about1, .get, .soc {
     text-align: center; }
 
   .get {
