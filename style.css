@@ -173,9 +173,6 @@ header .container nav a {
     .options_1 .icon:hover + .text h2 {
       color: #00c7e8; }
 
-.text {
-  text-transform: uppercase; }
-
 .fa {
   color: white; }
 
@@ -201,7 +198,7 @@ header .container nav a {
       width: 100%;
       height: 100%; }
 
-.layer {
+.gallery1_item .layer {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -209,21 +206,20 @@ header .container nav a {
   text-align: center;
   font-size: 20px;
   display: none; }
-  .layer .icon-layer {
+  .gallery1_item .layer .icon-layer {
     padding: 175px 0; }
-  .layer a {
+  .gallery1_item .layer a {
     display: inline-block;
     line-height: 50px;
     width: 50px;
     height: 50px; }
-    .layer a:hover {
+    .gallery1_item .layer a:hover {
       background: rgba(255, 255, 255, 0.5);
       transform: scale(1.2);
       -webkit-border-radius: 10px;
       -moz-border-radius: 10px;
       -ms-border-radius: 10px;
       border-radius: 10px; }
-
 .gallery1_item:hover .layer {
   display: block;
   background: rgba(0, 0, 0, 0.5); }
@@ -268,36 +264,29 @@ header .container nav a {
 .crew_photo:hover .descr_img1 {
   display: block; }
 
-.awesome_descr {
-  padding: 5px 0; }
-
-.photo_coffee {
-  padding: 5px 20px; }
-
-.awesome_p {
-  text-align: left;
-  line-height: 30px; }
-
-.coffee {
-  width: 100%;
-  height: 350px;
-  -webkit-border-radius: 5px;
-  -moz-border-radius: 5px;
-  -ms-border-radius: 5px;
-  border-radius: 5px; }
-
 .awesome {
   background: darkgray; }
-
-.awesome_descr .awesome_h2 {
-  line-height: 30px;
-  text-transform: uppercase;
-  font-size: 40px;
-  color: white;
-  font-weight: bold; }
-.awesome_descr .awesome_p {
-  color: white;
-  float: left; }
+  .awesome .photo_coffee {
+    padding: 5px 20px; }
+    .awesome .photo_coffee .coffee {
+      width: 100%;
+      height: 350px;
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      -ms-border-radius: 5px;
+      border-radius: 5px; }
+  .awesome .awesome_descr {
+    padding: 5px 0; }
+    .awesome .awesome_descr .awesome_h2 {
+      line-height: 30px;
+      text-transform: uppercase;
+      font-size: 40px;
+      color: white;
+      font-weight: bold; }
+    .awesome .awesome_descr .awesome_p {
+      color: white;
+      float: left;
+      line-height: 30px; }
 
 .numbers {
   text-align: center;
@@ -331,50 +320,44 @@ footer {
       text-transform: uppercase;
       font-size: 15px;
       float: left; }
-
-.social h2 {
-  font-size: 30px;
-  text-transform: uppercase; }
-.social .icon-btn {
-  width: 40px;
-  height: 40px;
-  border-style: none;
-  background: #00c7e8;
-  margin: 10px;
-  cursor: pointer;
-  font-size: 20px; }
-  .social .icon-btn:hover {
-    transform: scale(1.1); }
-
-.twitter {
-  color: #4099FF; }
-  .twitter:hover {
-    background-color: #4099FF;
-    color: #FFFFFF; }
-
-.facebook {
-  color: #3B5998; }
-  .facebook:hover {
-    background-color: #3B5998;
-    color: #FFFFFF; }
-
-.google-plus {
-  color: #DB5A3C; }
-  .google-plus:hover {
-    background-color: #DB5A3C;
-    color: #FFFFFF; }
-
-.instagram {
-  color: #5C3D2E; }
-  .instagram:hover {
-    background-color: #5C3D2E;
-    color: #FFFFFF; }
-
-.github {
-  color: #4183C4; }
-  .github:hover {
-    background-color: #4183C4;
-    color: #FFFFFF; }
+    footer .foot .soc .social h2 {
+      font-size: 30px;
+      text-transform: uppercase; }
+    footer .foot .soc .social .icon-btn {
+      width: 40px;
+      height: 40px;
+      border-style: none;
+      background: #00c7e8;
+      margin: 10px;
+      cursor: pointer;
+      font-size: 20px; }
+      footer .foot .soc .social .icon-btn:hover {
+        transform: scale(1.1); }
+    footer .foot .soc .buttons .twitter {
+      color: #4099FF; }
+      footer .foot .soc .buttons .twitter:hover {
+        background-color: #4099FF;
+        color: #FFFFFF; }
+    footer .foot .soc .buttons .facebook {
+      color: #3B5998; }
+      footer .foot .soc .buttons .facebook:hover {
+        background-color: #3B5998;
+        color: #FFFFFF; }
+    footer .foot .soc .buttons .google-plus {
+      color: #DB5A3C; }
+      footer .foot .soc .buttons .google-plus:hover {
+        background-color: #DB5A3C;
+        color: #FFFFFF; }
+    footer .foot .soc .buttons .instagram {
+      color: #5C3D2E; }
+      footer .foot .soc .buttons .instagram:hover {
+        background-color: #5C3D2E;
+        color: #FFFFFF; }
+    footer .foot .soc .buttons .github {
+      color: #4183C4; }
+      footer .foot .soc .buttons .github:hover {
+        background-color: #4183C4;
+        color: #FFFFFF; }
 
 .copy {
   background: #2f3640;

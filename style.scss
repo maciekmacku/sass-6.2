@@ -167,11 +167,8 @@ header {
                     }
         }
     }
-    
 }
-.text {
-    text-transform: uppercase;
-}
+
 .fa {
     color: white;
 }
@@ -202,7 +199,9 @@ header {
         }
     }
 } 
-.layer {
+
+.gallery1_item{
+    .layer {
     position: absolute;
     width:100%;
     height: 100%;
@@ -223,11 +222,10 @@ header {
                 transform:scale(1.20);
                 @include border-radius(10px);
             }
-    }
+        }
     
-}
-.gallery1_item:hover {
-    .layer {
+    }
+    &:hover .layer {
         display:block;
         background: rgba(0,0,0, 0.5);
     }
@@ -269,44 +267,40 @@ header {
         }
     }
 }
-.crew_photo:hover {
-    .descr_img1 {
+.crew_photo {
+    &:hover .descr_img1 {
         display: block;
     }
 }  
-.awesome_descr {
-    padding: 5px 0;
-}
 
-.photo_coffee {
-    padding: 5px 20px;
-   
-}
-.awesome_p {
-    text-align: left;
-    line-height: 30px;
-}
-.coffee {
-    width: 100%;
-    height: 350px;
-    @include border-radius(5px);
-}
+
+
 .awesome {
     background: $awesome-background;
-}
-
-.awesome_descr {
-    .awesome_h2 {
+    .photo_coffee {
+    padding: 5px 20px;
+        .coffee {
+            width: 100%;
+            height: 350px;
+            @include border-radius(5px);
+        }
+    }
+    .awesome_descr {
+        padding: 5px 0;
+        .awesome_h2 {
         line-height: 30px;
         text-transform: uppercase;
         font-size: 40px;
         color:white;
         font-weight: bold;
-    }
-    .awesome_p {
+        }
+        .awesome_p {
         color:white;
         float: left;
+        line-height: 30px;
+        }
     }
+        
 }
 .numbers {
     text-align: center;
@@ -353,62 +347,65 @@ footer {
                 float:left;
             }
         }
+        .soc {
+           .social {
+                h2 {
+                    font-size: 30px;
+                    text-transform: uppercase;
+                }
+                .icon-btn {
+                    width: 40px;
+                    height: 40px;
+                    border-style: none;
+                    background: $socialbtn-background;
+                    margin: 10px;
+                    cursor: pointer;
+                    font-size: 20px;
+                    &:hover {
+            transform: scale(1.10);    
+                    }
+               }
+            } 
+            .buttons {
+                .twitter {
+                    color: #4099FF;
+                    &:hover {
+                        background-color: #4099FF;
+                        color: $socialbtn-color;
+                    }
+                }
+                .facebook {
+                    color: #3B5998;
+                    &:hover {
+                        background-color: #3B5998;
+                        color: $socialbtn-color;
+                    }   
+                }
+                .google-plus {
+                    color: #DB5A3C;
+                    &:hover {
+                        background-color: #DB5A3C;
+                        color: $socialbtn-color;
+                    }
+                }
+                .instagram {
+                    color: #5C3D2E;
+                    &:hover {
+                        background-color: #5C3D2E;
+                        color: $socialbtn-color;
+                    }
+                }
+                .github { 
+                    color: #4183C4;
+                    &:hover {
+                        background-color: #4183C4;
+                        color: $socialbtn-color;
+                    }
+                }
+            }
+        }
     }
 } 
-.social {
-    h2 {
-        font-size: 30px;
-        text-transform: uppercase;
-    }
-    .icon-btn {
-	width: 40px;
-	height: 40px;
-	border-style: none;
-	background: $socialbtn-background;
-	margin: 10px;
-	cursor: pointer;
-	font-size: 20px;
-    &:hover {
-        transform: scale(1.10);    
-    }
-    }
-}
-.twitter {
-	color: #4099FF;
-    &:hover {
-       background-color: #4099FF;
-	   color: $socialbtn-color;
-    }
-}
-.facebook {
-	color: #3B5998;
-    &:hover {
-        background-color: #3B5998;
-        color: $socialbtn-color;
-    }
-}
-.google-plus {
-	color: #DB5A3C;
-    &:hover {
-        background-color: #DB5A3C;
-        color: $socialbtn-color;
-    }
-}
-
-.instagram {
-	color: #5C3D2E;
-    &:hover {
-        background-color: #5C3D2E;
-        color: $socialbtn-color;
-    }
-}
-.github { 
-	color: #4183C4;
-    &:hover {
-        background-color: #4183C4;
-        color: $socialbtn-color;
-    }
-}
 .copy {
     background: #2f3640;     
     padding: 10px 0;
