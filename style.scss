@@ -11,6 +11,7 @@ $optionshover-color: rgb(0,199,232);
 $featuretext-color: rgb(157,157,157);
 $awesome-background: darkgray;
 $socialbtn-background: rgba(0,199,232,1);
+$socialbtn-color: #FFFFFF; 
 $foot-color: #353736; 
 @mixin border-radius($radius) {
   -webkit-border-radius: $radius;
@@ -18,8 +19,6 @@ $foot-color: #353736;
   -ms-border-radius: $radius;
   border-radius: $radius;
 }
-
-
 
 * {
 box-sizing: border-box;
@@ -378,21 +377,21 @@ footer {
 	color: #4099FF;
     &:hover {
        background-color: #4099FF;
-	   color: #FFFFFF;
+	   color: $socialbtn-color;
     }
 }
 .facebook {
 	color: #3B5998;
     &:hover {
         background-color: #3B5998;
-        color: #FFFFFF;
+        color: $socialbtn-color;
     }
 }
 .google-plus {
 	color: #DB5A3C;
     &:hover {
         background-color: #DB5A3C;
-        color: #FFFFFF;
+        color: $socialbtn-color;
     }
 }
 
@@ -400,14 +399,14 @@ footer {
 	color: #5C3D2E;
     &:hover {
         background-color: #5C3D2E;
-        color: #FFFFFF;
+        color: $socialbtn-color;
     }
 }
-.github {
+.github { 
 	color: #4183C4;
     &:hover {
         background-color: #4183C4;
-        color: #FFFFFF;
+        color: $socialbtn-color;
     }
 }
 .copy {
@@ -422,8 +421,6 @@ footer {
     padding: 12px;
     float:left;
 }
-
-
 header {
     height: 370px;
     text-align: center;
