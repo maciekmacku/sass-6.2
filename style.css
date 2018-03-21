@@ -99,31 +99,33 @@ body {
 .col-offset-12 {
   margin-left: 100%; }
 
+.fa {
+  color: white; }
+
 header {
   background-color: #313234;
   height: 60px; }
-  header .links {
+  header .container nav .links {
     padding: 2px 2px; }
-    header .links .logo {
+    header .container nav .links .logo {
       float: left; }
-
-header .container nav img {
-  padding: 10px; }
-header .container nav ul {
-  float: right;
-  margin: 0 auto;
-  list-style-type: none; }
-header .container nav li {
-  display: inline-block; }
-header .container nav a {
-  line-height: 50px;
-  display: block;
-  color: #fff;
-  padding: 0 10px;
-  text-decoration: none;
-  text-transform: uppercase; }
-  header .container nav a:hover {
-    color: #0984e3; }
+  header .container nav img {
+    padding: 10px; }
+  header .container nav ul {
+    float: right;
+    margin: 0 auto;
+    list-style-type: none; }
+  header .container nav li {
+    display: inline-block; }
+  header .container nav a {
+    line-height: 50px;
+    display: block;
+    color: #fff;
+    padding: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase; }
+    header .container nav a:hover {
+      color: #0984e3; }
 
 .hero {
   width: 100%;
@@ -151,12 +153,12 @@ header .container nav a {
       font-weight: bold;
       padding: 5px 100px 5px 5px; }
 
-.options_1 {
+.options .options_1 {
   text-align: center;
   padding: 70px 5px; }
-  .options_1 .text {
+  .options .options_1 .text {
     text-transform: uppercase; }
-  .options_1 .icon {
+  .options .options_1 .icon {
     font-size: 50px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -167,14 +169,11 @@ header .container nav a {
     border: 5px solid #313332;
     padding: 15px 15px;
     background: #313332; }
-    .options_1 .icon:hover {
+    .options .options_1 .icon:hover {
       background: #00c7e8;
       border-color: #00c7e8; }
-    .options_1 .icon:hover + .text h2 {
+    .options .options_1 .icon:hover + .text h2 {
       color: #00c7e8; }
-
-.fa {
-  color: white; }
 
 .feature {
   padding: 50px 0;
@@ -357,7 +356,7 @@ footer {
         background-color: #4183C4;
         color: #FFFFFF; }
 
-.copy {
+.copyright .copy {
   background: #2f3640;
   padding: 10px 0;
   text-align: center; }
