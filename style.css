@@ -406,15 +406,13 @@ footer {
   header {
     height: 370px;
     text-align: center; }
-    header .container .logo {
-      float: none; }
-    header .container nav img {
+    header .container nav .links .logo {
       padding: 10px;
       float: none; }
-    header .container nav ul {
+    header .container nav .links ul {
       float: none;
       padding: 0; }
-      header .container nav ul li {
+      header .container nav .links ul li {
         display: block; }
 
   .hero .slogan {
